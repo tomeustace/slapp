@@ -1,0 +1,29 @@
+a {
+  display: block;
+  margin: 10px;
+}
+
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+button {
+  background-color: rgb(28, 190, 240);
+  color: white;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.quote {
+  padding: 8px;
+  background: hsla(0, 0, 0, .1);
+}
+

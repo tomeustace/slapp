@@ -1,0 +1,32 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  position: fixed;
+  transition: all 1s linear;
+}
+
+.mat-grid-tile {
+  position: absolute;
+  transition: all 200ms linear;
+}
+a {
+  display: block;
+}
+.intro-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+

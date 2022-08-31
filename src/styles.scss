@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// @import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "prismjs/themes/prism-okaidia";
+// @import "prismjs/themes/prism.css";
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$blue: (
+  50: #7fdddd,
+  100: #1a237e,
+  200: #7f7fdd,
+  contrast: (
+    50: white,
+    100: white
+  )
+);
+
+/* ======== Angular material custom themes ======== */
+$my-custom-primary: mat-palette($blue, 100, 50, 200);
+$my-custom-accent: mat-palette($mat-yellow, 100, 500, A100);
+$my-custom-warn: mat-palette($mat-lime);
+
+$my-custom-theme: mat-light-theme($my-custom-primary, $my-custom-accent, $my-custom-warn);
+
+@include angular-material-theme($my-custom-theme);
+
+.mat-toolbar.mat-primary {
+  box-shadow: 0px 4px 5px 0px #0000006b;
+}
+.mat-drawer-inner-container > .mat-toolbar {
+  // background-color: #1a237e99 !important;
+  border-bottom: solid #1a237e99 2px !important;
+  color: white;
+  font-size: 14px;
+  .mat-icon {
+    color: white;
+  }
+}
