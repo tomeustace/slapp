@@ -1,6 +1,6 @@
-# Into to Angular PWA
+# Slide Application 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+An app I use when giving talks and want to show slide like content but not use slides!
 
 ## Development server
 
